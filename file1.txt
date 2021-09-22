@@ -1,0 +1,23 @@
+This is the file 1 that i have created as a part of GIT handson course.
+
+GLOBAL CONFIGURATION
+==============================
+git config --global user.name "username" -> set the user name configuration 
+git config --global user.email "user email" -> set the user email configuration
+
+The above setup is for global and it will be same for all the projects that you create
+
+LOCAL CONFIGURATION
+==============================
+git config user.name "username" -> set the user name configuration 
+git config user.email "user email" -> set the user email configuration
+
+The above setup is for global and it will be particular for one the projects that you create
+
+HELP
+================================
+1. man git -> opens the documentation for git
+2. git config --list -> fetches all the git configurations
+3. git config user.name -> fetches the global configuration available for the user.name variable.
+4. git init -> used to initialize a project into git
+
