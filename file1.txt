@@ -31,3 +31,4 @@ COMMANDS
 6. git status -> to know the status of the repository (A- Added newly, M- Modifed from the last commit, ?? - Untracked)
 7. git diff -> Changes that are staged and ready to be committed "git diff --staged"
 	 -> Changes that are made but not staged.
+8. git commit -a -m "commit message" -> to skip the add step and commit into staging dir
