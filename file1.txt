@@ -16,9 +16,10 @@ The above setup is for global and it will be particular for one the projects tha
 
 HELP
 ================================
-1. man git -> opens the documentation for git
-2. git config --list -> fetches all the git configurations
-3. git config user.name -> fetches the global configuration available for the user.name variable.
+1. man git -> opens the extensive documentation for git
+2. git help <option> -> short documentation for the option provided.
+3. git config --list -> fetches all the git configurations
+4. git config user.name -> fetches the global configuration available for the user.name variable.
 
 COMMANDS
 ==========================
