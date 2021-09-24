@@ -28,3 +28,6 @@ COMMANDS
 3. git commit -m "commit message" -> adds the commit message to the file that is being added
 4. git remote add origin ''https://git path" -> adds the connection between the local repo and git repo that is created
 5. git push -u origin master -> adds the file from the local repo to the git repo whose link is added in the above step.
+6. git status -> to know the status of the repository (A- Added newly, M- Modifed from the last commit, ?? - Untracked)
+7. git diff -> Changes that are staged and ready to be committed "git diff --staged"
+	 -> Changes that are made but not staged.
