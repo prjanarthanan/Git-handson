@@ -29,6 +29,20 @@ COMMANDS
 4. git remote add origin ''https://git path" -> adds the connection between the local repo and git repo that is created
 5. git push -u origin master -> adds the file from the local repo to the git repo whose link is added in the above step.
 6. git status -> to know the status of the repository (A- Added newly, M- Modifed from the last commit, ?? - Untracked)
+		This command can also be used to check which in branch we are checked out
+		>> git status (This is the command run)
+			On branch master (This is the first line of the result)
+				  ======(you can see the name of the branch checked out)
 7. git diff -> Changes that are staged and ready to be committed "git diff --staged"
 	 -> Changes that are made but not staged.
 8. git commit -a -m "commit message" -> to skip the add step and commit into staging dir
+9. git log -> to get the details of the commits. displayed in datewise descending order
+10. git log -1 -> to get the last recent commit
+11. git log --oneline -> to get the commit details in one line
+12. git log --stat -> gets the detailed information about the commit.
+13. git rm "filename" -> to completely remove the file from the project
+14. git rm --cached "filename" -> to untrack the file from git but not removing it completely
+15. git mv "filename" "newfilename" -> to rename the filename into another filename
+16. git checkout -b "new branch" -> to create a newbranch and checkout
+17. git checkout mater -> to checkout into master branch.
+18. git branch -> Creates a branch without checking out of it
