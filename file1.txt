@@ -46,3 +46,13 @@ COMMANDS
 16. git checkout -b "new branch" -> to create a newbranch and checkout
 17. git checkout mater -> to checkout into master branch.
 18. git branch -> Creates a branch without checking out of it
+19. git add . | git stash -> record a current working dir 
+		this changes goes to git stash list -> stash
+				  git stash show -> to show the list of stashed files
+				  git stash pop -> to move the stash into working dir
+
+20. git merge new_branch - > to merge the changes from the new branch into master(for this you have to check in into master branch)
+21. git reset --soft -> will move the specific commit/s back from git repositor into the staging area
+22. git reset --mixed /git reset -> default option if nothing else is specified
+		very similar to --soft but moves the changes into the working directory
+23. git reset --hard -> moves the changes into the trash
