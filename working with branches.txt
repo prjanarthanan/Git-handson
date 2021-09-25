@@ -1,0 +1,14 @@
+Create a new branch from master
+====================================================================================================================
+git checkout -b quickfix 		- Create a branch called quickfix and move to that branch
+git add * 				- Stage the changes
+git commit -m "change comment" 	- Commit the changes to the quickfix branch
+git checkout master		- Master branch is now clean and the changes are stored in the quickfix branch
+
+Branch commands
+====================================================================================================================
+git branch 			- List your branches
+git checkout branch_name		- Swtich to work in a different branch
+git branch -m oldbranch newbranch 	- Rename a branch
+git branch -d branchname		- To delete a branch
+git branch -D branchname		- To force delete a branch
