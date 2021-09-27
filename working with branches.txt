@@ -10,5 +10,15 @@ Branch commands
 git branch 			- List your branches
 git checkout branch_name		- Swtich to work in a different branch
 git branch -m oldbranch newbranch 	- Rename a branch
+git branch -m <newbranch2>		- If you want to rename the newbranch to newbranch2
 git branch -d branchname		- To delete a branch
 git branch -D branchname		- To force delete a branch
+
+Comparing and merging branches
+====================================================================================================================
+step 1 - switch to the target branch 	- git checkout <target-branch> (here it is master branch)
+step 2 - merge the source branch	- git merge <source-branch> (here the branch you have your modified changes)
+
+if you want to compare branches before you merge, you can compare 2 branches
+
+git diff <branch1> <branch2>
