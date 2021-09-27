@@ -83,3 +83,7 @@ git diff <commit> <commit> 		- diff b/w 2 commits
 git rm --cached <filename>		- To delete a file from the repo
 git rm <filename> 			- to delete a file from repo and the local filesystem
 .git/info/exclude			- ignore patters for your local repo
+
+merge abort
+=================================================================================================
+git merge --abort			- To abort the current merge operation
