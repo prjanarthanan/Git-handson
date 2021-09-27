@@ -74,3 +74,12 @@ git diff <commit> <commit> 		- diff b/w 2 commits
 	git diff master feature
 	git diff feature...master
 	git diff feature master file2.txt
+.gitignore			- To ignore a file from git tracking
+	* ? ! / [a-zA-Z]		- Anything, one character, negator, directory seperator, range
+	**/bin			- matches any directory in the repo
+	*.zip			- matches any file in the repo
+	/bin			- Relative to .gitignore directory
+				  Put a .gitignore at your project root
+git rm --cached <filename>		- To delete a file from the repo
+git rm <filename> 			- to delete a file from repo and the local filesystem
+.git/info/exclude			- ignore patters for your local repo
