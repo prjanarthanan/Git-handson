@@ -20,5 +20,57 @@ step 1 - switch to the target branch 	- git checkout <target-branch> (here it is
 step 2 - merge the source branch	- git merge <source-branch> (here the branch you have your modified changes)
 
 if you want to compare branches before you merge, you can compare 2 branches
-
 git diff <branch1> <branch2>
+
+Rearranging with rebase
+====================================================================================================================
+Do not use rebase:
+1. On a public branch (check your tram guidelines before using it)
+When to use rebase:
+1. clean up history before sharing a branch
+2. Pull without merge - Pull changes from a branch into your branch without performing a merge
+
+git log --oneline 			- to see the branch history
+git merge-base ticket1 master	- Get the original base fo the "ticket1" branch created from master
+git rebase -i <commit-sha>		- Start the rebase form the commit sha
+		-i 		- for an interactive rebase
+		commit-sha	- will tell git where to start the rebase
+git reflog 			- To check the logd for reference
+
+cherry-pick
+====================================================================================================================
+Cherry pick does not moves the commit, it creates a copy of a commit but with a new parent in the branch you are cherry picking into
+The original commit stays the same and it not removed from the way cherry would be if you picked it
+
+Copy specific commits to another branch
+Bugfis for multiple versions of product
+Capture commits from inactive branch
+Move specific commits to your branch
+    - Features needed for yout ticket
+    - Branches not ready to merge yet
+Creatres duplicate commit in each branch
+    - Can cause confusion
+
+git log --oneline 			- to see the branch history
+git log <branch-name> --oneline	- to see the details of one branch
+git checkout <branch-name> 	- checkout to the branch where you want to push the commit
+git cherry-pick <commit> 		- to merge the particular commit to any branch
+
+setting up remotes
+====================================================================================================================
+git remove -v 			- to fetch the details of the remote repos
+git fetch				- to information from remote that isn't already in the local copy, 
+					You can evaluate and add what do you want
+git pull				- It is a combination of fetch and merge, 
+					it will donwload the information and initiate a merge into the local branch
+git push				- To copy the changes from local repo to remote repo
+git push will not be resolved untill all the conflicts are resolved. You may need to have your local repo up-to-date to push
+git diff				- Changed and non staged for commit
+git diff --cached (git commit)	- Changed and staged for commit
+git diff Head 			- Changed since last commit
+git diff <commit>			- diff b/w commit and the current
+git diff --cached <commit>		- diff b/w Specif commit and staged
+git diff <commit> <commit> 		- diff b/w 2 commits
+	git diff master feature
+	git diff feature...master
+	git diff feature master file2.txt
