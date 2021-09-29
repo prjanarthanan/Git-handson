@@ -1,0 +1,15 @@
+Advanced Git Tips and Tricks
+=============================
+Commit - contains the below informations
+		author 
+		timestamp 
+		reference to the previous commit.
+
+Snapshot - Represent the state of the directories and files in the repo at the time of commit was made
+		Internally git represents each dir with an object called tree
+
+Reference - A name that points to a certain commit
+		Tags - Fixed reference to a specific commit
+		Branches - is a reference to the latest commit in the line of history
+				during every new commit, the branch reference is updated to point to it
+		Head - Is a special reference managed by git to keep track of the br anch
